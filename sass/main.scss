@@ -22,6 +22,8 @@ body {
 	background: linear-gradient(270deg, rgba(17, 18, 13, 1) 0%, rgba(26, 28, 27, 1) 57%);
 }
 
+// header
+
 .header {
 	display: flex;
 	justify-content: center;
@@ -35,6 +37,7 @@ body {
 		flex-direction: column;
 
 		&-heading {
+			font-size: 3em;
 			font-family: 'Edu NSW ACT Hand Pre', cursive;
 			letter-spacing: 0.2rem;
 			color: $white;
@@ -46,10 +49,33 @@ body {
 
 			&__underline {
 				justify-self: end;
+				margin-top: 0.1em;
 				background-color: $underline-color;
 				height: 1px;
 				width: 50%;
+				transition: width 1s ease;
 			}
 		}
 	}
 }
+
+// first section
+
+.about {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 100vh;
+
+	&-box {
+		background-color: $white;
+		position: absolute;
+		height: 80vh;
+		width: 1px;
+	}
+}
+
+@import './large';
+@import './medium';
+@import './small';

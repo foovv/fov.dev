@@ -45,6 +45,7 @@ body {
   flex-direction: column;
 }
 .header-box-heading {
+  font-size: 3em;
   font-family: "Edu NSW ACT Hand Pre", cursive;
   letter-spacing: 0.2rem;
   color: #f1ede4;
@@ -55,7 +56,49 @@ body {
 }
 .header-box-heading__underline {
   justify-self: end;
+  margin-top: 0.1em;
   background-color: #9299b8;
   height: 1px;
   width: 50%;
+  transition: width 1s ease;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.about-box {
+  background-color: #f1ede4;
+  position: absolute;
+  height: 80vh;
+  width: 1px;
+}
+
+@media (min-width: 1920px) {
+  .header-box-heading {
+    font-size: 4em;
+  }
+}
+@media (min-width: 768px) {
+  .header-box-heading {
+    transition: transform 0.3s ease;
+    scale: 1;
+  }
+  .header-box-heading:hover {
+    transform: scale(2);
+  }
+  .header-box-heading:hover .header-box-heading__underline {
+    justify-self: end;
+    background-color: #9299b8;
+    height: 1px;
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .header-box-heading {
+    font-size: 3.5em;
+  }
 }/*# sourceMappingURL=main.css.map */
