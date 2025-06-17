@@ -43,10 +43,6 @@ body {
 			color: $white;
 			font-weight: 800;
 
-			&__special {
-				color: $accent-color;
-			}
-
 			&__underline {
 				justify-self: end;
 				margin-top: 0.1em;
@@ -59,20 +55,39 @@ body {
 	}
 }
 
+.pulse-btn {
+	background-color: $accent-color;
+	cursor: pointer;
+	padding: 2em;
+	border-radius: 50%;
+	border: none;
+	animation: pulse 1.5s infinite;
+
+	i {
+		color: $white;
+		font-size: 22px;
+	}
+	&-box {
+		cursor: pointer;
+		position: absolute;
+		bottom: 50px;
+		padding: 1em 1em;
+	}
+}
+
 // first section
 
 .about {
+	display: flex;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	height: 100vh;
 
-	&-box {
-		background-color: $white;
-		position: absolute;
-		height: 80vh;
-		width: 1px;
+	.section-header {
+		color: $accent-color;
+		margin: 3em;
 	}
 }
 

@@ -13,3 +13,25 @@
 	z-index: 1000;
 	background-color: #fff;
 }
+
+.section-header {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: 3em;
+	font-family: 'Edu NSW ACT Hand Pre', cursive;
+	letter-spacing: 0.2rem;
+	color: $white;
+	font-weight: 800;
+}
+
+.special-color {
+	color: $accent-color;
+	white-space: normal;
+}
+
+.special-color-two {
+	margin-left: 0.3em;
+	color: $white;
+	white-space: normal;
+}

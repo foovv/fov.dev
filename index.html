@@ -11,24 +11,40 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
+		<script src="https://kit.fontawesome.com/ba82766aaf.js" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
 		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="icon" href="/img/fov.png" />
 	</head>
 	<body>
 		<header class="header wrapper">
-			<div class="background"></div>
 			<div class="header-box">
 				<h1 class="header-box-heading">
-					<span class="header-box-heading__special">fov</span>.dev
+					<span class="special-color">fov</span>.dev
 					<div class="header-box-heading__underline"></div>
 				</h1>
 			</div>
+			<a class="pulse-btn-box" href="#aboutme">
+				<button class="pulse-btn">
+					<i class="fas fa-arrow-down"></i>
+				</button>
+			</a>
 		</header>
 		<main class="main section-padding">
-			<section class="about">
-				<div class="about-box wrapper">
-
+			<section class="about" id="aboutme">
+				<div class="about-box wrapper" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+					<h2 class="section-header">
+						about
+						<span class="special-color-two">me</span>
+					</h2>
 				</div>
 			</section>
 		</main>
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+		<script>
+			AOS.init()
+		</script>
+		<script src="/js/main.js"></script>
 	</body>
 </html>
