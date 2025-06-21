@@ -35,9 +35,10 @@ body {
 		position: relative;
 		display: flex;
 		flex-direction: column;
+		bottom: 10px;
 
 		&-heading {
-			font-size: 3em;
+			font-size: 5.5rem;
 			font-family: 'Edu NSW ACT Hand Pre', cursive;
 			letter-spacing: 0.2rem;
 			color: $white;
@@ -65,12 +66,12 @@ body {
 
 	i {
 		color: $white;
-		font-size: 22px;
+		font-size: 2.2rem;
 	}
 	&-box {
 		cursor: pointer;
 		position: absolute;
-		bottom: 50px;
+		bottom: 10px;
 		padding: 1em 1em;
 	}
 }
@@ -85,12 +86,17 @@ body {
 	align-content: center;
 	height: 100vh;
 
-	.section-header {
+	&-header {
+		font-size: 5rem;
 		color: $accent-color;
-		margin: 3em;
+	}
+
+	&-text {
+		font-size: 1.9rem;
+		padding: 3em;
+		color: $white;
 	}
 }
-
-@import './large';
-@import './medium';
 @import './small';
+@import './medium';
+@import './large';

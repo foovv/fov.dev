@@ -1,5 +1,6 @@
 @media (min-width: 768px) {
 	.header-box-heading {
+		font-size: 6.5rem;
 		transition: transform 0.3s ease;
 
 		scale: (1);
@@ -14,5 +15,11 @@
 				width: 100%;
 			}
 		}
+	}
+}
+
+@media (min-width: 1368px) {
+	.about-text {
+		padding: 3.5em 0em;
 	}
 }

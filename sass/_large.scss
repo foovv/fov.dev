@@ -1,5 +1,9 @@
-@media (min-width: 1920px) {
-	.header-box-heading {
-		font-size: 4em;
+@media (min-width: 1925px) {
+	.header {
+		&-box {
+			&-heading {
+				font-size: 10rem;
+			}
+		}
 	}
 }
